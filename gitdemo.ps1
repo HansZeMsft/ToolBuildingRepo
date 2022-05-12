@@ -8,4 +8,8 @@ Function First-Function
 
 $Mod = Find-Module -name AzureKeyVaultHelper
 $Mod | fl * -Force
+$Mod.AdditionalMetadata
 Start-Process $Mod.ProjectUri.AbsoluteUri
+
+# New Feature code starts below
+Get-Service -Name BITS
